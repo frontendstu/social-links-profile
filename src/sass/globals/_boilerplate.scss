@@ -1,1 +1,8 @@
 @use '../abstracts/mixins' as mixin;
+
+body {
+  font: var(--copy-font);
+  line-height: var(--copy-leading);
+  color: var(--copy-color);
+  background-color: var(--color-body);
+}
