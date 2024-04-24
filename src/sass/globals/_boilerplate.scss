@@ -8,3 +8,7 @@ body {
   display: grid;
   place-content: center;
 }
+
+.heading {
+  font-weight: var(--heading-fw);
+}
