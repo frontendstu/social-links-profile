@@ -1,1 +1,45 @@
 @use '../abstracts/mixins' as mixin;
+
+.profile-item {
+  @include mixin.flex($gap: var(--profile-item-gap));
+
+  padding: var(--profile-item-padding);
+  background-color: var(--profile-item-bg);
+  border-radius: var(--profile-item-radius);
+  text-align: var(--profile-item-text-align);
+
+  &__img img {
+    width: var(--profile-item-img-width);
+    border-radius: var(--profile-item-img-radius);
+  }
+
+  &__info {
+    @include mixin.flex($gap: var(--profile-item-info-gap));
+
+    .heading {
+      font-size: var(--fs-200);
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--profile-item-link-gap);
+    width: 100%;
+    font-weight: var(--profile-item-link-fw);
+
+    a {
+      padding-block: var(--profile-item-link-item-padding-block);
+      border-radius: var(--profile-item-link-item-radius);
+      background-color: var(--profile-item-link-item-bg);
+      color: var(--profile-item-link-item-color);
+      text-decoration: none;
+      transition: var(--profile-item-link-item-transition);
+
+      @include mixin.hover-focus {
+        background-color: var(--profile-item-link-item-bg-active);
+        color: var(--profile-item-link-item-color-active);
+      }
+    }
+  }
+}
