@@ -29,4 +29,28 @@
 
   // ----- Heading
   --heading-fw: var(--fw-semibold);
+
+  // ---------- COMPONENTS
+
+  // ----- Profile Item
+  --profile-item-text-align: center;
+  --profile-item-bg: var(--color-neutral-800);
+  --profile-item-radius: 12px;
+  --profile-item-padding: 2.5rem;
+  --profile-item-gap: 1.5rem;
+
+  --profile-item-img-radius: 99rem;
+  --profile-item-img-width: 5.5rem;
+
+  --profile-item-info-gap: 0.75rem;
+
+  --profile-item-link-gap: 1rem;
+  --profile-item-link-fw: var(--fw-semibold);
+  --profile-item-link-item-padding-block: 0.75rem;
+  --profile-item-link-item-bg: var(--color-neutral-700);
+  --profile-item-link-item-bg-active: var(--color-primary);
+  --profile-item-link-item-radius: 8px;
+  --profile-item-link-item-color: var(--color-neutral-100);
+  --profile-item-link-item-color-active: var(--color-neutral-900);
+  --profile-item-link-item-transition: 150ms ease-in-out all;
 }
