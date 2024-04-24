@@ -1,1 +1,10 @@
 @use '../abstracts' as abstract;
+
+footer,
+footer a {
+  margin-top: var(--footer-margin-top);
+  color: var(--footer-color);
+  font-size: var(--footer-fs);
+  text-align: var(--footer-text-align);
+  text-decoration: none;
+}
