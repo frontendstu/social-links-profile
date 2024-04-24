@@ -1,31 +1,46 @@
-# Sass Starter
+![](./screenshot.jpg)
 
-A barebones starter template to get your app off the ground quickly. Featuring little to no mixins, no pre-defined variables or utility classes.
+# Frontend Mentor - Social links profile solution
 
-## Getting Started
+This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-In order to use Sass Starter, you will need the following installed on your machine:
+## Table of contents
 
-- Node.js v18.16.1 (https://nodejs.org/en)
-- NPM v9.7.2 (https://www.npmjs.com/)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-## Clone Repository
+## Overview
 
-```shell
-https://github.com/frontendstu/sass-starter
-```
+### The challenge
 
-## Installation
+Users should be able to:
 
-1. Navigation to project directory
-2. Run the following command
+- See hover and focus states for all interactive elements on the page
 
-```shell
-npm install
-```
+### Links
 
-3. Once the package is installed, run the following command
+- 📦 Solution URL: [https://github.com/frontendstu/recipe-page/](https://github.com/frontendstu/social-links-profile/)
+- 🖥 Live Site URL: [https://frontendstu.github.io/recipe-page/](https://frontendstu.github.io/social-links-profile/)
 
-```shell
-npm run start
-```
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+
+### What I learned
+
+A very straight-forward challenge. Not much of a challenge, but a good refresher.
+
+## Author
+
+- GitHub - [@frontendstu](https://github.com/frontendstu/)
+- Frontend Mentor - [@frontendstu](https://www.frontendmentor.io/profile/frontendstu)
