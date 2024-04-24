@@ -1,0 +1,165 @@
+:root {
+  --color-neutral-100: hsl(0, 0%, 100%);
+  --color-neutral-700: hsl(0, 0%, 20%);
+  --color-neutral-800: hsl(0, 0%, 12%);
+  --color-neutral-900: hsl(0, 0%, 8%);
+  --color-primary: hsl(75, 94%, 57%);
+  --color-body: var(--color-neutral-900);
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fs-100: 0.875rem;
+  --fs-200: 1.5rem;
+  --ff-primary: "Inter", sans-serif;
+  --copy-font: var(--fw-regular) var(--fs-100) var(--ff-primary);
+  --copy-leading: 150%;
+  --copy-color: var(--color-neutral-100);
+  --copy-color-span: var(--color-primary);
+  --heading-fw: var(--fw-semibold);
+  --profile-item-text-align: center;
+  --profile-item-bg: var(--color-neutral-800);
+  --profile-item-radius: 12px;
+  --profile-item-padding: 2.5rem;
+  --profile-item-gap: 1.5rem;
+  --profile-item-img-radius: 99rem;
+  --profile-item-img-width: 5.5rem;
+  --profile-item-info-gap: 0.75rem;
+  --profile-item-link-gap: 1rem;
+  --profile-item-link-fw: var(--fw-semibold);
+  --profile-item-link-item-padding-block: 0.75rem;
+  --profile-item-link-item-bg: var(--color-neutral-700);
+  --profile-item-link-item-bg-active: var(--color-primary);
+  --profile-item-link-item-radius: 8px;
+  --profile-item-link-item-color: var(--color-neutral-100);
+  --profile-item-link-item-color-active: var(--color-neutral-900);
+  --profile-item-link-item-transition: 150ms ease-in-out all;
+  --footer-margin-top: 1rem;
+  --footer-color: var(--color-neutral-700);
+  --footer-fs: 0.75rem;
+  --footer-text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/***
+ * Inter
+ */
+@font-face {
+  font-family: Inter;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url(../assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf);
+}
+body {
+  font: var(--copy-font);
+  line-height: var(--copy-leading);
+  color: var(--copy-color);
+  background-color: var(--color-body);
+  display: grid;
+  place-content: center;
+}
+
+.heading {
+  font-weight: var(--heading-fw);
+}
+
+span {
+  color: var(--copy-color-span);
+}
+
+.sr-only {
+  position: absolute !important;
+  clip-path: inset(50%) !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--profile-item-gap);
+  padding: var(--profile-item-padding);
+  background-color: var(--profile-item-bg);
+  border-radius: var(--profile-item-radius);
+  text-align: var(--profile-item-text-align);
+}
+.profile-item__img img {
+  width: var(--profile-item-img-width);
+  border-radius: var(--profile-item-img-radius);
+}
+.profile-item__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--profile-item-info-gap);
+}
+.profile-item__info .heading {
+  font-size: var(--fs-200);
+}
+.profile-item__links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--profile-item-link-gap);
+  width: 100%;
+  font-weight: var(--profile-item-link-fw);
+}
+.profile-item__links a {
+  padding-block: var(--profile-item-link-item-padding-block);
+  border-radius: var(--profile-item-link-item-radius);
+  background-color: var(--profile-item-link-item-bg);
+  color: var(--profile-item-link-item-color);
+  text-decoration: none;
+  transition: var(--profile-item-link-item-transition);
+}
+.profile-item__links a:hover, .profile-item__links a:focus {
+  background-color: var(--profile-item-link-item-bg-active);
+  color: var(--profile-item-link-item-color-active);
+}
+
+footer,
+footer a {
+  margin-top: var(--footer-margin-top);
+  color: var(--footer-color);
+  font-size: var(--footer-fs);
+  text-align: var(--footer-text-align);
+  text-decoration: none;
+}
