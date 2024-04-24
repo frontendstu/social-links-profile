@@ -53,4 +53,12 @@
   --profile-item-link-item-color: var(--color-neutral-100);
   --profile-item-link-item-color-active: var(--color-neutral-900);
   --profile-item-link-item-transition: 150ms ease-in-out all;
+
+  // ---------- LAYOUT
+
+  // ----- Footer
+  --footer-margin-top: 1rem;
+  --footer-color: var(--color-neutral-700);
+  --footer-fs: 0.75rem;
+  --footer-text-align: center;
 }
