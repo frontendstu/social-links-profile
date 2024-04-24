@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- 📦 Solution URL: [https://github.com/frontendstu/recipe-page/](https://github.com/frontendstu/social-links-profile/)
-- 🖥 Live Site URL: [https://frontendstu.github.io/recipe-page/](https://frontendstu.github.io/social-links-profile/)
+- 📦 Solution URL: [https://github.com/frontendstu/social-links-profile/](https://github.com/frontendstu/social-links-profile/)
+- 🖥 Live Site URL: [https://frontendstu.github.io/social-links-profile/](https://frontendstu.github.io/social-links-profile/)
 
 ## My process
 
